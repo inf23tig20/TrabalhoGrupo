@@ -47,7 +47,7 @@ O produto é um conjunto de sites informativos sobre desportos motorizados. Cada
 
 ### Ligação para o Site
 
-O site do grupo está hospedado no Netlify e pode ser acedido através do seguinte link: [Site do Grupo](https://666c680230c660d22f6b3af6--race4grade.netlify.app/)
+O site do grupo está hospedado no Netlify e pode ser acedido através do seguinte link: [Site do Grupo](https://race4grade.netlify.app/)
 
 O site do grupo está hospedado também no Webhostapp e pode ser acedido através do seguinte link: [Site do Grupo](https://race4grade.000webhostapp.com/Index.html)
 
