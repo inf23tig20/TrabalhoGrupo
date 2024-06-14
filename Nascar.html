@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Nascar" />
+    <meta name="author" content="Incognito" />
+    <meta name="keywords" content="HTML" />
+    <meta http-equiv="refresh" content="50" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="style.css" />
+    <title>NASCAR</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1>About NASCAR</h1>
+    </header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="F1.html">Formula 1</a>
+      <a href="motogp.html">MotoGP</a>
+      <a href="about.html">About</a>
+    </nav>
+    <main class="content">
+      <p>
+        The National Association for Stock Car Auto Racing
+        (<strong>NASCAR</strong>) is an American auto racing sanctioning and
+        operating company. Known for its <em>exciting races</em>, NASCAR is a
+        favorite among motorsport enthusiasts.
+      </p>
+      <figure>
+        <img src="nascar-race.jpg" alt="NASCAR Race" />
+        <figcaption>A thrilling NASCAR race.</figcaption>
+      </figure>
+      <p>
+        NASCAR organizes many races throughout the year, with the
+        <mark>Daytona 500</mark> being one of the most prestigious events. For
+        more details about the Daytona 500, visit the
+        <a href="https://www.daytonainternationalspeedway.com" target="_blank"
+          >official website.</a
+        >
+      </p>
+      <!-- Video Section -->
+      <h3>Watch a NASCAR Race</h3>
+      <div class="video-container">
+        <iframe
+          width="640"
+          height="360"
+          src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+
+      <h3>Sign Up for Updates</h3>
+      <fieldset>
+        <form action="/submit_form.php" method="post">
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="user_name"
+            required
+            placeholder="John Doe"
+          /><br /><br />
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="user_mail"
+            required
+            placeholder="Email"
+          /><br /><br />
+          <input type="submit" value="Subscribe" />
+          <input type="hidden" name="submit1" />
+        </form>
+      </fieldset>
+    </main>
+    <footer class="footer">
+      <p>&copy; 2024 Motorsports. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

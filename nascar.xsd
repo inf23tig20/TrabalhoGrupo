@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="nascar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="header" type="headerType"/>
+        <xs:element name="navigation" type="navigationType"/>
+        <xs:element name="main" type="mainType"/>
+        <xs:element name="footer" type="footerType"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="headerType">
+    <xs:sequence>
+      <xs:element name="title" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="navigationType">
+    <xs:sequence>
+      <xs:element name="link" maxOccurs="unbounded">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="url" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="mainType">
+    <xs:sequence>
+      <xs:element name="introduction" type="paragraphType"/>
+      <xs:element name="figure" type="figureType"/>
+      <xs:element name="details" type="paragraphType"/>
+      <xs:element name="subscription" type="subscriptionType"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="paragraphType">
+    <xs:sequence>
+      <xs:element name="paragraph" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="figureType">
+    <xs:sequence>
+      <xs:element name="image">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="src" type="xs:string"/>
+            <xs:element name="alt" type="xs:string"/>
+            <xs:element name="caption" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="subscriptionType">
+    <xs:sequence>
+      <xs:element name="title" type="xs:string"/>
+      <xs:element name="form">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="field" maxOccurs="unbounded">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="label" type="xs:string"/>
+                  <xs:element name="input">
+                    <xs:complexType>
+                      <xs:attribute name="type" type="xs:string" use="required"/>
+                      <xs:attribute name="id" type="xs:string" use="required"/>
+                      <xs:attribute name="name" type="xs:string" use="required"/>
+                      <xs:attribute name="required" type="xs:boolean"/>
+                      <xs:attribute name="placeholder" type="xs:string"/>
+                    </xs:complexType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="submit">
+              <xs:complexType>
+                <xs:attribute name="value" type="xs:string" use="required"/>
+              </xs:complexType>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="footerType">
+    <xs:sequence>
+      <xs:element name="text" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+</xs:schema>

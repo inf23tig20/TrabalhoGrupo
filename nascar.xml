@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nascar>
+  <header>
+    <title>About NASCAR</title>
+  </header>
+  <navigation>
+    <link>
+      <name>Home</name>
+      <url>index.html</url>
+    </link>
+    <link>
+      <name>Formula 1</name>
+      <url>F1.html</url>
+    </link>
+    <link>
+      <name>MotoGP</name>
+      <url>motogp.html</url>
+    </link>
+    <link>
+      <name>About</name>
+      <url>about.html</url>
+    </link>
+  </navigation>
+  <main>
+    <introduction>
+      <paragraph>
+        The National Association for Stock Car Auto Racing
+        (<strong>NASCAR</strong>) is an American auto racing sanctioning and
+        operating company. Known for its <em>exciting races</em>, NASCAR is a
+        favorite among motorsport enthusiasts.
+      </paragraph>
+    </introduction>
+    <figure>
+      <image>
+        <src>nascar-race.jpg</src>
+        <alt>NASCAR Race</alt>
+        <caption>A thrilling NASCAR race.</caption>
+      </image>
+    </figure>
+    <details>
+      <paragraph>
+        NASCAR organizes many races throughout the year, with the
+        <highlight>Daytona 500</highlight> being one of the most prestigious events. For
+        more details about the Daytona 500, visit the
+        <link url="https://www.daytonainternationalspeedway.com">official website</link>.
+      </paragraph>
+    </details>
+    <subscription>
+      <title>Sign Up for Updates</title>
+      <form action="/submit_form.php" method="post">
+        <field>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required placeholder="John Doe" />
+        </field>
+        <field>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required placeholder="Email"/>
+        </field>
+        <submit value="Subscribe" />
+      </form>
+    </subscription>
+  </main>
+  <footer>
+    <text>&copy; 2024 Motorsports. All rights reserved.</text>
+  </footer>
+</nascar>
