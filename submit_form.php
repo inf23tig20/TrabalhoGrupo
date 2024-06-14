@@ -10,8 +10,8 @@
   {
    $name=$_POST["user_name"];
    $email=$_POST["user_mail"];
-   $fileHandle = fopen('TrabalhoFinal\emailList.txt', 'w') OR die ("Can't open file\n");
-   $result = fwrite ($fileHandle, "NEW MESSAGE FROM " . $name . ", " . $email . ", " . $message . "\r\n");
+   $fileHandle = fopen('emailList.txt', 'w') OR die ("Can't open file\n");
+   $result = fwrite ($fileHandle, "NEW MESSAGE FROM " . $name . ", " . $email . "\r\n");
    fclose($fileHandle);
    if ($result)
     {
