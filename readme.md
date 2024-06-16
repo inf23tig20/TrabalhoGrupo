@@ -11,10 +11,6 @@ Bem-vindo ao nosso projeto dedicado ao emocionante mundo dos desportos motorizad
 
 O nosso site é destinado a todos os apaixonados por desportos motorizados, desde os fãs casuais que desejam aprender mais sobre o desporto até aos entusiastas dedicados que procuram informações detalhadas e atualizações constantes.
 
-## Conclusão
-
-Este projeto é uma celebração do mundo dos desportos motorizados, combinando informações detalhadas, multimédia e uma experiência de utilizador excepcional. Convidamos todos os fãs de Fórmula 1, MotoGP e NASCAR a explorar o nosso site, aprender mais sobre os seus desportos favoritos e juntar-se à nossa comunidade de entusiastas.
-
 ## User Interface
 
 ### Estudo da Interface
@@ -51,5 +47,8 @@ O site do grupo está hospedado no Netlify e pode ser acedido através do seguin
 
 O site do grupo está hospedado também no Webhostapp e pode ser acedido através do seguinte link: [Site do Grupo](https://race4grade.000webhostapp.com/Index.html)
 
+## Conclusão
+
+Este projeto é uma celebração do mundo dos desportos motorizados, combinando informações detalhadas, multimédia e uma experiência de utilizador excepcional. Convidamos todos os fãs de Fórmula 1, MotoGP e NASCAR a explorar o nosso site, aprender mais sobre os seus desportos favoritos e juntar-se à nossa comunidade de entusiastas.
 
 
